@@ -1,0 +1,105 @@
+/* Qualification Tabs */
+.qualification__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+  }
+  
+  /* Qualification Button */
+  .qualification__button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+  }
+  
+  .qualification__button:hover {
+    color: var(rgb(0, 166, 255)); /* Matches primary color */
+  }
+  
+  /* Qualification Icon */
+  .qualification__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+    color: var(rgb(0, 166, 255)); /* Ensure icon color matches the primary color */
+  }
+  
+  /* Qualification Data */
+  .qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+  }
+  
+  /* Qualification Title */
+  .qualification__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(rgb(0, 166, 255)); /* Matches primary color */
+  }
+  
+  /* Qualification Subtitle */
+  .qualification__subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+    color: var(rgb(0, 166, 255)); /* Matches light text color */
+  }
+  
+  /* Qualification Calendar */
+  .qualification__calendar {
+    font-size: var(--smaller-font-size);
+    color: var(rgb(0, 166, 255)); /* Matches light text color */
+  }
+  
+  /* Qualification Rounder */
+  .qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(rgb(14, 219, 185)); /* Matches primary color */
+    border-radius: 50%;
+  }
+  
+  /* Qualification Line */
+  .qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color); /* Matches primary color */
+    transform: translate(6px, -7px);
+  }
+  
+  /* Qualification Content Toggle */
+  .qualification [data-content] {
+    display: none;
+  }
+  
+  .qualification__active[data-content] {
+    display: block;
+  }
+  
+  /* Add any additional styles specific to your education section here, ensuring they use the same color variables */
+  /* Education Section Headline */
+/* Education Section Headline */
+.education__headline {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: white; /* Set text color to white */
+    margin-bottom: var(--mb-2); /* Adjust spacing as needed */
+    
+    /* Animation */
+    animation: headlineAnimation 1.5s ease-in-out;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes headlineAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(80);
+    }
+  }
+  
